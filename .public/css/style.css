@@ -1,0 +1,8 @@
+body {
+  background-color: red;
+}
+body:hover {
+  transform: scale(1.5);
+}
+
+/*# sourceMappingURL=style.css.map */
