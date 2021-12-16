@@ -1,0 +1,54 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.sizeImage
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.centerFirstText
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+    background-color: #f2f2f2;
+    box-shadow: inset 0px 1px #d8d8d8;
+
+    i
+    {
+        padding-right: 15px;
+    }
+}
+
+.textAlignSection1
+{
+    text-align: center;
+}
+
+.boutonExplorer
+{
+    border: 2px solid transparent;
+    background: linear-gradient(332deg, #9356dc, #ff79da); /* permet de faire le degrader */
+    border-radius: 30px;
+    text-align: center;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.backGrisSection1
+{
+    background-color: #f8f8f8;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
