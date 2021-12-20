@@ -18,7 +18,7 @@ body {
   justify-content: center;
   padding-right: 25px;
   background-color: #f2f2f2;
-  box-shadow: inset 0px 1px #d8d8d8;
+  box-shadow: inset 0px 2px 5px 2px #d8d8d8;
 }
 .centerFirstText i {
   padding-right: 15px;
@@ -97,6 +97,90 @@ body {
   color: grey;
   font-size: 1.2rem;
   margin-left: 20px;
+}
+
+.Restaurant {
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurantTitle h3 {
+  padding: 30px 0px 0px 10px;
+}
+
+.bloc {
+  border-radius: 25px;
+  box-shadow: 4px 4px 6px #aaa;
+  margin: 20px;
+  position: relative;
+  background: #fff;
+}
+.bloc img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  height: 120px;
+}
+.bloc a {
+  text-decoration: none;
+  color: black;
+}
+
+.new {
+  color: #008766;
+  background: #99E2D0;
+  border: 5px solid #99E2D0;
+  border-radius: 5px;
+  position: absolute;
+  right: 1%;
+  top: 5%;
+}
+
+.heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+.heart h4 {
+  margin: 0;
+  padding-left: 10px;
+}
+.heart p {
+  padding-left: 10px;
+}
+
+.paddingBlocTxt {
+  padding-left: 10px;
+}
+
+.foooter {
+  background-color: #000000c7;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.imgfooter {
+  width: 30%;
+  filter: invert(1);
+  padding-bottom: 10px;
+}
+
+.footerA {
+  text-decoration: none;
+  color: white;
+}
+
+.footerLogo {
+  color: white;
+  padding-right: 10px;
+}
+
+.footerLogo1 {
+  color: white;
+  padding-right: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */
