@@ -218,3 +218,97 @@ body
   color: white;
   padding-right: 17px;
 }
+
+/* FIN INDEX.HTML */ 
+
+/* MENU1 */ 
+
+.header1
+{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.arrow
+{
+  margin-left: 10px;
+}
+
+.imgLogo
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.imgResto
+{
+  width: 100%;
+}
+
+.titleResto
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 50px;
+    background-color: #f2f2f2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: 900;
+    font-style: italic;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sectionMenu1
+{
+  background-color: #f2f2f2;
+  padding-bottom: 50px;
+}
+
+.choixPlat
+{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+.carte
+{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.carteT1
+{
+    padding-left: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.carteTEtPrix
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.carteT2
+{
+  margin: 0;
+  padding-left: 5px;
+}
+
+.cartePrix 
+{
+  margin-top: 0;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
