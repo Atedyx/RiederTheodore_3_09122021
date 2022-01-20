@@ -4,6 +4,11 @@ body
     margin: 0;
 }
 
+.policeResto
+{
+  font-family: 'Shrikhand', sans-serif;
+}
+
 
 .backgroundwhite
 {
@@ -107,10 +112,28 @@ body
   font-weight: bold;
 }
 
+@keyframes fill {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.1);
+  }
+   100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  }
+
+
 .coeur1
 {
   cursor: pointer;
   padding-left: 95px;
+  font-size: 20px;
+  top: 10px;
+  position: relative;
 }
 
 .coeur1:hover
@@ -135,12 +158,13 @@ body
     background: linear-gradient(332deg, #9356dc, #ff79da); /* permet de faire le degrader */
     border-radius: 30px;
     text-align: center;
-    width: 60%;
+    width: max-content;
     margin-right: auto;
     margin-left: auto;
     color: white;
     margin-top: 50px;
     margin-bottom: 30px;
+    padding: 10px;
 }
 
 
@@ -282,7 +306,7 @@ body
   {
     padding-left: 10px;
     margin: 0;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 
 
@@ -328,6 +352,11 @@ body
   padding-bottom: 40px;
 }
 
+.paddingH2
+  {
+    padding: 20px;
+  }
+
 /* FIN INDEX.HTML */ 
 
 /* MENU1 */ 
@@ -349,7 +378,7 @@ body
 {
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 220px;
 }
 
 .imgResto
@@ -556,8 +585,83 @@ body
 }
 
 
+@media screen and (min-width: 768px)
+{
+  .fonctionnement1
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fonctionnement h2 
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .restaurantTitle
+  {
+    display: flex;
+    justify-content: center;
+  }
 
 
+  .bloc
+  {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .carteCentre
+  {
+  margin-left: 90px;
+  }
+
+  .choixPlat
+  {
+    margin-left: 90px;
+  }
+}
+
+@media screen and (min-width: 1024px)
+{
+  .sizeImage
+  {
+    width: 35%;
+  }
+
+  .fonctionnement1 
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .container
+  {
+    display: flex;
+    width: 90%;
+    margin: 50px 50px 0px 50px;
+  }
+
+  .bloc
+  {
+    width: 45%;
+  }
+
+  .carteCentre
+  {
+    margin-left: 200px;
+    width: 70%;
+  }
+
+  .choixPlat
+  {
+    margin-left: 200px;
+  }
+}
 
 
