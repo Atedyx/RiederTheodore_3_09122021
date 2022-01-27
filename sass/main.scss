@@ -124,7 +124,7 @@ body
     opacity: 1;
     transform: scale(1);
   }
-  }
+}
 
 
 .coeur1
@@ -522,17 +522,17 @@ body
 } 
 
 @keyframes anim {
-0% {
-  opacity: 0;
-}
-50% {
-  opacity: .5;
-  transform: scale(1.1);
-}
- 100% {
-  opacity: 1;
-  transform: scale(1);
-}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .delay1
