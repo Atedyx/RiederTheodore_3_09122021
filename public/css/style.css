@@ -16,8 +16,18 @@ body {
   -webkit-animation: backcolor 3s linear forwards;
   -o-animation: backcolor 3s linear forwards;
   animation: backcolor 3s linear forwards;
+  top: 0;
 }
 
+@keyframes backcolor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1000;
+  }
+}
 .chargement {
   -webkit-animation: spin 3s linear forwards;
   -o-animation: spin 3s linear forwards;
@@ -42,15 +52,6 @@ body {
   100% {
     transform: rotate(360deg);
     opacity: 0;
-  }
-}
-@keyframes backcolor {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1000;
   }
 }
 .sizeImage {
@@ -103,8 +104,6 @@ body {
 }
 .coeur1 {
   cursor: pointer;
-  padding-left: 95px;
-  font-size: 20px;
   top: 10px;
   position: relative;
 }
@@ -124,7 +123,6 @@ body {
 }
 
 .boutonExplorer {
-  border: 2px solid transparent;
   background: linear-gradient(332deg, #9356dc, #ff79da);
   /* permet de faire le degrader */
   border-radius: 30px;
@@ -135,7 +133,15 @@ body {
   color: white;
   margin-top: 50px;
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 13px 30px 13px 30px;
+  box-shadow: 0px 8px 24px #0000004d;
+  transition-duration: 0.25s;
+  border: 0;
+}
+
+.boutonExplorer:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 24px #0000008c;
 }
 
 .backGrisSection1 {
@@ -220,7 +226,7 @@ body {
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
-  height: 120px;
+  height: 180px;
 }
 .bloc a {
   text-decoration: none;
@@ -339,6 +345,8 @@ body {
 .sectionMenu1 {
   background-color: #f2f2f2;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .choixPlat {
@@ -424,13 +432,14 @@ body {
 .iconAnimVert {
   color: white;
   font-size: 20px;
-  transform: rotate(0deg);
   transition: all 0.7s ease-in-out;
 }
 
-.iconAnimVert:hover {
-  opacity: 1;
-  transform: rotate(-360deg);
+.carteCentre:hover .iconAnimVert {
+  color: white;
+  font-size: 20px;
+  transition: 1s;
+  transform: rotate(360deg);
 }
 
 .animmationTopBottom {
@@ -494,6 +503,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .chargement {
+    margin-top: 25vw;
+  }
+
   .fonctionnement1 {
     display: flex;
     flex-direction: column;
@@ -514,6 +527,9 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .bloc .img {
+    height: 235px;
   }
 
   .carteCentre {
@@ -544,6 +560,9 @@ body {
 
   .bloc {
     width: 45%;
+  }
+  .bloc .img {
+    height: 220px;
   }
 
   .carteCentre {
