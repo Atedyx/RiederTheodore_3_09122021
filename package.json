@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Atedyx/RiederTheodore_3_09122021.git"
